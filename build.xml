@@ -27,12 +27,12 @@
 **
 **
 -->
-<project name="myPluginName" default="dist" basedir=".">
+<project name="DirectDownload" default="dist" basedir=".">
 
     <!-- enter the SVN commit message -->
     <property name="commit.message" value="Commit message" />
     <!-- enter the *lowest* JOSM version this plugin is currently compatible with -->
-    <property name="plugin.main.version" value="" />
+    <property name="plugin.main.version" value="3592" />
 
 
     <!--
@@ -99,12 +99,14 @@
         ************************************************
     -->
             <manifest>
-                <attribute name="Author" value="..."/>
-                <attribute name="Plugin-Class" value="..."/>
+                <attribute name="Author" value="Hartmut Holzgraefe"/>
+                <attribute name="Plugin-Class" value="org.openstreetmap.josm.plugins.directdownload.DirectDownload"/>
                 <attribute name="Plugin-Date" value="${version.entry.commit.date}"/>
-                <attribute name="Plugin-Description" value="..."/>
+                <attribute name="Plugin-Description" value="Download your GPX tracks from openstreetmap.org"/>
+<!--
                 <attribute name="Plugin-Icon" value="..."/>
                 <attribute name="Plugin-Link" value="..."/>
+-->
                 <attribute name="Plugin-Mainversion" value="${plugin.main.version}"/>
                 <attribute name="Plugin-Version" value="${version.entry.commit.revision}"/>
             </manifest>
